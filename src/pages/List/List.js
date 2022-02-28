@@ -1,22 +1,13 @@
 import React from 'react';
 import './List.scss'
-import styles from '../../styles/common.module.scss'
+import TopNav from './TopNav';
+import '../../styles/common.scss'
 
 function List() {
     return (
         <>
-            <div className={styles.container}>
-                <header className={styles.header}>
-                    <h1 className={styles.logo}>WeBucks</h1>
-                    <nav>
-                        <ul className={styles.menu}>
-                            <li>COFFEE</li>
-                            <li>MENU</li>
-                            <li>STORE</li>
-                            <li>WHAT'S NEW</li>
-                        </ul>
-                    </nav>
-                </header>
+            <div className="container">
+                <TopNav />
                 <section className="section1">
                     <article className="title-box">
                         <h2>콜드 브루 커피</h2>

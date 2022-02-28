@@ -1,31 +1,13 @@
 import React from 'react';
+import TopNav from '../List/TopNav';
 import './Detail.scss'
-import styles from '../../styles/common.module.scss'
+import '../../styles/common.scss'
 
 function Detail() {
     return (
         <>
-            <div className={styles.container}>
-                <header className={styles.header}>
-                    <h1 className={styles.logo}>WeBucks</h1>
-                    <nav>
-                        <ul className={styles.menu}>
-                            <li>COFFEE</li>
-                            <li>MENU</li>
-                            <li>STORE</li>
-                            <li>WHAT'S NEW</li>
-                        </ul>
-                    </nav>
-                </header>
-                <section className="sub-title">
-                    <h2>콜드 브루</h2>
-                    <ul>
-                        <li>홈</li>
-                        <li>음료</li>
-                        <li>에스프레소</li>
-                        <li>화이트 초콜릿 모카</li>
-                    </ul>
-                </section>
+            <div className="container">
+                <TopNav />
                 <section className="contents">
                     <article className="imageBox">
                         <img src="/images/coffeeImg1.jpeg" alt="coffee" />
