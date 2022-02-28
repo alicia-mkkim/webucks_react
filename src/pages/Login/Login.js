@@ -3,11 +3,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss'
 
 function Login() {
-
-    function LoginBtn(){
-        const navigate = useNavigate();
+    const navigate = useNavigate();
+    function goToLists(){
         navigate('/list');
-
+        console.log('!!!!')
     }
 
 
@@ -20,7 +19,7 @@ function Login() {
                         <input name="email" className="email" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
                         <input id="password" type="password"  placeholder="비밀번호" />
                     </div>
-                    <button className="loginBtn" type="submit" disabled="disabled" onclick={LoginBtn}>로그인</button>
+                    <button className="loginBtn" type="submit"  onClick={()=>{goToLists()}}>로그인</button>
                     <Link to="/signUp" className="forgetPW">비밀번호를 잊으셨나요?</Link>
                 </section>
             </main>
