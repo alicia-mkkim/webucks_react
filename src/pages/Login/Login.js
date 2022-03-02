@@ -6,7 +6,6 @@ function Login() {
     const navigate = useNavigate();
     function goToLists(){
         navigate('/list');
-        console.log('!!!!')
     }
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './List.scss'
-import TopNav from './TopNav';
+import TopNav from '../../components/TopNav/TopNav';
 import '../../styles/common.scss'
 
 function List() {
